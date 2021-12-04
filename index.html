@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script src="js/owl.carousel.min.js"></script>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: arial;
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .d-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        width: 100%;
+        padding: 20px 30px;
+        background-color: black;
+        color: white;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    ul li {
+        margin-left: 40px;
+    }
+
+    ul a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav span {
+        display: none;
+    }
+
+    .item img {
+        width: 90%;
+        height: 500px;
+    }
+
+    .ico {
+        position: fixed;
+        right: 0px;
+        top: 60%;
+        padding: 15px;
+        border-bottom-left-radius: 25%;
+        border-top-left-radius: 25%;
+        background-color: rgb(30, 207, 30);
+        color: white;
+    }
+
+    .ico1 {
+        top: 69.5%;
+        background: linear-gradient(rgb(17, 17, 240), rgb(231, 50, 81), red, yellow);
+    }
+
+    .ico i {
+        font-size: 30px;
+    }
+
+    .btn {
+        border: none;
+        border-radius: 8px;
+        padding: 5px 15px;
+    }
+
+
+    .footer {
+        background-color: black;
+        color: white;
+        margin: 15px 0px;
+        padding: 20px;
+    }
+
+    .footer .box {
+        width: 33.33%;
+        padding-left: 20px;
+    }
+
+    .box ul li {
+        margin: 20px 0px;
+    }
+
+    li a i {
+        margin-right: 15px;
+        font-size: 20px;
+    }
+
+
+
+    .container1 {
+        width: "100vw";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container1 .services {
+        width: 90%;
+        text-align: center;
+        padding: 15px;
+        box-shadow: 2px 2px 6px gray;
+        background-color: rgb(167, 245, 248);
+    }
+
+    .services {
+        padding: 10px 150px;
+        justify-content: space-between;
+    }
+
+    .services .box {
+        width: 30%;
+        padding: 30px 15px;
+        align-items: center;
+        text-align: center;
+        border-radius: 12px;
+        justify-content: center;
+        box-shadow: 2px 2px 6px gray;
+    }
+
+    .services .box i {
+        font-size: 60px;
+        margin: 40px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .brand-slider .item i {
+        font-size: 90px;
+    }
+
+    .brand-slider {
+        width: 100vw;
+        z-index: -1;
+        height: 100px;
+        margin-left: 30px;
+        margin-top: 20px;
+        background-color: lightblue;
+    }
+
+    .container3 {
+        width: 100vw;
+        padding: 15px 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col-3 {
+        width: 25%;
+        box-shadow: 2px 2px 6px gray;
+    }
+
+    .col-8 {
+        width: 70%;
+        box-shadow: 2px 2px 6px gray;
+    }
+
+    .col-6 {
+        width: 48.5%;
+        box-shadow: 2px 2px 6px gray;
+        border-radius: 8px;
+    }
+
+    .hightt {
+        height: 250px;
+        padding: 25px;
+        line-height: 40px;
+    }
+
+    .col-6 button {
+        background-color: lightsalmon;
+    }
+
+    .hightt:nth-child(1) {
+        background: url(img/s1.jpg);
+    }
+
+    .hightt:nth-child(2) {
+        background: url(img/s2.jpg);
+        color: white;
+    }
+
+    @media(max-width:786px) {
+        .nav span {
+            display: block;
+        }
+
+        ul li {
+            display: none;
+        }
+
+        .box {
+            display: block;
+        }
+
+        .content img {
+            width: 100%;
+        }
+
+        .services {
+            display: block;
+            padding: 10px 30px;
+        }
+
+        .services .box {
+            width: 100%;
+        }
+
+        .col-6 {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .container3 {
+            display: block;
+        }
+
+        .footer .d-flex {
+            flex-direction:column ;
+        }
+        .footer .d-flex .box{width: 100;}
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="nav row">
+            <h3>SNM Technology</h3>
+            <ul class="d-flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+            <span><i class="fas fa-bars"></i></span>
+        </div>
+        <div class="owl-carousel hero-slider owl-theme">
+            <div class="item"><img src="img/c1.jpg" alt=""></div>
+            <div class="item"><img src="img/c2.jpg" alt=""></div>
+            <div class="item"><img src="img/c3.jpg" alt=""></div>
+            <div class="item"><img src="img/c4.jpg" alt=""></div>
+            <div class="item"><img src="img/c5.jpg" alt=""></div>
+
+        </div>
+
+        <div class="container1">
+            <div class="services">
+                <h2>Top feature</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. perferendis est unde non voluptatibus fugiat
+                    modi aut maxime maiores repellat aperiam quis, repellendus molestias quod inventore officiis enim
+                    ratione! Reprehenderit ex incidunt aperiam.</p>
+            </div>
+        </div>
+
+        <div class="services d-flex">
+            <div class="box">
+                <i class="fas fa-fist-raised"></i>
+                <h3>strong</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. perferendis est unde non voluptatibus fugiat
+                    modi aut maxime maiores repellat aperiam quis</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-wizards-of-the-coast"></i>
+                <h3>wizards</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. perferendis est unde non voluptatibus fugiat
+                    modi aut maxime maiores repellat aperiam quis</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-penny-arcade"></i>
+                <h3>Profitable</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. perferendis est unde non voluptatibus fugiat
+                    modi aut maxime maiores repellat aperiam quis</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="container1">
+            <div class="services">
+                <h2>Our Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. perferendis est unde non voluptatibus fugiat
+                    modi aut maxime maiores repellat aperiam quis, repellendus molestias quod inventore officiis enim
+                    ratione! Reprehenderit ex incidunt aperiam.</p>
+            </div>
+
+        </div>
+
+        <div class="container3">
+            <div class="col-6 hightt">
+                <h4>IT Profressional</h4>
+                <button class="btn">Click Here</button>
+            </div>
+            <div class="col-6 hightt">
+                <h4>IT Support</h4>
+                <button class="btn">Click Here</button>
+            </div>
+        </div>
+
+        <div class="container1">
+            <div class="services">
+                <h2>Extra Views</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. perferendis est unde non voluptatibus fugiat
+                    modi aut maxime maiores repellat aperiam quis, repellendus molestias quod inventore officiis enim
+                    ratione! Reprehenderit ex incidunt aperiam.</p>
+            </div>
+        </div>
+
+
+        <div class="owl-carousel brand-slider owl-theme">
+            <div class="item"><i class="fab fa-wizards-of-the-coast"></i></div>
+            <div class="item"><i class="fab fa-d-and-d-beyond"></i></div>
+            <div class="item"><i class="fab fa-critical-role"></i></div>
+            <div class="item"><i class="fab fa-wizards-of-the-coast"></i></div>
+            <div class="item"><i class="fab fa-d-and-d-beyond"></i></div>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="ico"><i class="fab fa-whatsapp"></i></div>
+        <div class="ico ico1"><i class="fab fa-instagram"></i></div>
+
+
+
+
+
+
+        <div class="footer">
+            <div class="container d-flex">
+                <div class="box">
+                    <ul>
+                        <li><a href="">File</a></li>
+                        <li><a href="">History</a></li>
+                        <li><a href="">Folder</a></li>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul>
+                        <li><a href="">File</a></li>
+                        <li><a href="">History</a></li>
+                        <li><a href="">Folder</a></li>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul>
+                        <li><a href="">File</a></li>
+                        <li><a href="">History</a></li>
+                        <li><a href="">Folder</a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a><a href="#"><i
+                                    class="fab fa-staylinked"></i></a><a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+        $('.hero-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+
+
+        $('.brand-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
